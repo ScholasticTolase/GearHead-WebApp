@@ -1,0 +1,29 @@
+﻿.footer {
+    background: #393939;
+    padding: 1em 0 3em;
+}
+
+    .footer p {
+        color: #fff;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+        .footer a:hover {
+            color: #3b8e31;
+        }
+
+/*-- responsive-mediaquries --*/
+@media(max-width:1024px) {
+    .footer {
+        background: #393939;
+        padding: 1em 0 1em;
+    }
+}

@@ -1,0 +1,26 @@
+﻿@if (Session["UserId"] == null)
+{
+    <ul>
+        <li class="bti"><a href="#">Home</a></li>
+        <li class="bti"><a href="#">About</a></li>
+        <li class="bti"><a href="#">HOW-TOs</a></li>
+        <li class="bti"><a href="#">Maintenance</a></li>
+        <li class="bti"><a href="#">Contact</a></li>
+        <li class="bti"><a href="#">Logout</a></li>
+        <div class="clearfix"> </div>
+    </ul>
+
+    <script>
+
+        //  When the document is ready
+        $(document).ready(function () {
+
+            $(".bti").click(function () {
+                $(".head-nav ul").hide("slow", function () {
+                    alert("Kindly Login First");
+                });
+            });
+
+        }); // document
+    </script>
+}

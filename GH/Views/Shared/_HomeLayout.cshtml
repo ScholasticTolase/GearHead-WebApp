@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gearhead::@ViewBag.Title</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Car auto fix, car breakdown, tricks to fix your car, Quick fix for your car" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+    <!-- //Meta tag Keywords -->
+
+    <link rel="icon" href="~/Content/images/engineering.png" />
+    <!-- Custom-Files -->
+    <script src="~/Content/blog/js/jquery.min.js"></script>
+
+    <link href="~/Content/landpage/css/bootstrap.css" rel="stylesheet" />
+    <!-- Bootstrap-Core-CSS -->
+
+
+    <link href="~/Content/landpage/css/footer.css" rel="stylesheet" />
+    <link href="~/Content/landpage/css/style.css" rel="stylesheet" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="~/Content/landpage/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Shojumaru:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+    <!-- //Fonts -->
+    @*   @Styles.Render("~/Content/css")*@
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+
+<body>
+
+
+
+    <!-- mian-content -->
+    <section class="main-content" id="home">
+
+
+        <!-- /header -->
+        <header>
+            <div class="container-fluid px-lg-5 px-3">
+
+
+                <!-- nav -->
+                <nav class="py-2 d-lg-flex">
+                    <div id="logo">
+                        <h1>
+
+                            <a class="navbar-brand logo" style=" font-family: 'Shojumaru', cursive, Arial, serif;" href="/Home/LandPage">
+                                GearHead
+                            </a>
+                        </h1>
+                    </div>
+
+                    <label for="drop" class="toggle">Menu</label>
+                    <input type="checkbox" id="drop" />
+                    <ul class="menu ml-auto">
+                        <li>@Html.ActionLink("Home", "UserPage", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+
+                        <li>@Html.ActionLink("Maintenance ", "Index", "Articles")</li>
+                        <li>@Html.ActionLink("Know-How", "Know-How", "Article")</li>
+                        <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+
+                        @if (Session["UserId"] != null)
+                        {
+                            <li>@Html.ActionLink("Logout", "Logout", "Home")</li>
+                        }
+                    </ul>
+
+                </nav>
+                <!-- //nav -->
+
+
+            </div>
+        </header>
+        <!-- //header -->
+
+
+        <!-- /banner-inner -->
+        @Html.Partial("_Banner")
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active">@ViewBag.Title</li>
+        </ol>
+        <!-- //banner-inner -->
+    </section>
+
+
+
+    <div class="container py-3">
+
+
+
+
+    @RenderBody()
+
+
+
+    </div>
+
+
+
+
+    <!-- footer -->
+    <div class="footer position-sticky" @*style="position: fixed; left: 0; bottom: 0; width: 100%; height: 10px;"*@>
+        <div class="container">
+            <p>Copyrights © 2020 GearHead All rights reserved </p>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>
+

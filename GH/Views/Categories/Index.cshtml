@@ -1,0 +1,488 @@
+﻿@model IEnumerable<GH.Models.Category>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CategoryName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CategoryType }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CategoryType }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CategoryType })
+        </td>
+    </tr>
+}
+
+</table>
+
+<div class="container" id="site-content">
+
+    <main role="main">
+
+
+        <header class="entry-archive-header">
+
+            <h1 class="entry-title entry-archive-title"><span class="divider"><span>Category</span></span>Maintenance</h1><div class="category-description">
+                <p>Know How for all means knowing the right maintenance schedule for all your vehicles. We’ve leveraged over 90 years of experience to help you maintain your car, truck, boat, motorcycle, lawn mower, ATV, snowmobile, and more. Regardless of whether you do all your own maintenance in your home <a href="http://knowhow.napaonline.com/five-essential-tools-for-your-home-garage/" target="_blank" rel="noopener noreferrer">garage</a> or trust the <a href="http://knowhow.napaonline.com/bringing-your-car-to-the-mechanic-even-if-youre-a-do-it-yourselfer/" target="_blank" rel="noopener noreferrer">experts</a> at your local NAPA AutoCare, we’ve got the knowledge you need to keep everything running in top condition. Changing your <a href="http://knowhow.napaonline.com/5-common-oil-change-questions-answered/" target="_blank" rel="noopener noreferrer">oil</a> on a regular basis is key to long engine life, but so is a fresh <a href="http://knowhow.napaonline.com/dirty-air-filter-check-change/" target="_blank" rel="noopener noreferrer">air filter</a>. Don’t forget to check your <a href="http://knowhow.napaonline.com/inside-a-napa-brake-package/" target="_blank" rel="noopener noreferrer">brakes</a> on a regular basis. Maintaining a vehicle doesn’t have to be difficult when NAPA Know How is on your side.</p>
+            </div>
+        </header>
+
+        <div id="main-content" class="main-content content-posts">
+
+
+            <article id="post-38604" class="post-38604 post type-post status-publish format-standard has-post-thumbnail hentry category-maintenance tag-antifreeze tag-chemicals tag-coolant tag-cooling-system tag-engine-coolant tag-flush tag-radiator tag-water-pump post-has-thumbnail">
+
+
+                <a href="http://knowhow.napaonline.com/how-to-flush-a-radiator/" class="thumbnail">
+                    <img width="700" height="366" src="http://knowhow.napaonline.com/wp-content/uploads/2020/08/radiator_flush_feature.jpg" class="attachment-carmack-archive size-carmack-archive wp-post-image jetpack-lazy-image jetpack-lazy-image--handled" alt="Pouring radiator flush into the overflow tank." data-lazy-loaded="1">
+                </a>
+
+
+                <section class="entry entry-archive">
+
+
+                    <div class="post-meta-data">
+
+                        <span class="posted-on meta">Posted <a href="http://knowhow.napaonline.com/how-to-flush-a-radiator/" rel="bookmark"><time class="entry-date published updated" datetime="2020-08-21T11:36:06-04:00"><span class="post-human-time">1 week ago</span></time></a></span>	<span class="post-lead-category meta"><a href="http://knowhow.napaonline.com/category/maintenance/">Maintenance</a></span>
+
+                    </div>
+
+                    <h2 class="entry-title">
+                        <a href="http://knowhow.napaonline.com/how-to-flush-a-radiator/" rel="bookmark">
+                            How to Flush a Radiator
+                        </a>
+                    </h2>
+
+                    <p>Keeping the engine bay clean is easy, but what about the cooling system? Here’s how to flush a radiator to keep it clean and operating smoothly.</p>
+
+                </section>
+
+            </article>
+
+            <article id="post-38050" class="post-38050 post type-post status-publish format-standard has-post-thumbnail hentry category-maintenance tag-diy tag-diy-maintenance tag-engine-oil-change tag-motor-oil-2 tag-oil-change tag-oil-filter tag-oil-filter-maintenance tag-oil-life tag-oil-plug tag-recycle-oil post-has-thumbnail">
+
+
+                <a href="http://knowhow.napaonline.com/getting-ready-for-your-first-diy-oil-change-4-tips-for-success/" class="thumbnail">
+                    <img width="700" height="366" src="http://knowhow.napaonline.com/wp-content/uploads/2020/06/Jeep_oil_pan.jpg" class="attachment-carmack-archive size-carmack-archive wp-post-image jetpack-lazy-image jetpack-lazy-image--handled" alt="Getting Ready For Your First DIY Oil Change: 4 Tips For Success" data-lazy-loaded="1">
+                </a>
+
+
+                <section class="entry entry-archive">
+
+
+                    <div class="post-meta-data">
+
+                        <span class="posted-on meta">Posted <a href="http://knowhow.napaonline.com/getting-ready-for-your-first-diy-oil-change-4-tips-for-success/" rel="bookmark"><time class="entry-date published updated" datetime="2020-08-19T15:28:12-04:00"><span class="post-human-time">2 weeks ago</span></time></a></span>	<span class="post-lead-category meta"><a href="http://knowhow.napaonline.com/category/maintenance/">Maintenance</a></span>
+
+                    </div>
+
+                    <h2 class="entry-title">
+                        <a href="http://knowhow.napaonline.com/getting-ready-for-your-first-diy-oil-change-4-tips-for-success/" rel="bookmark">
+                            Getting Ready For Your First DIY Oil Change: 4 Tips For Success
+                        </a>
+                    </h2>
+
+                    <p>Maintaining your own vehicle can be a rewarding experience. One of the most common beginner DIY projects is an oil change. The key to success for any automotive project is … <a href="http://knowhow.napaonline.com/getting-ready-for-your-first-diy-oil-change-4-tips-for-success/" class="read-more">Continue Reading <span class="screen-reader-text">Getting Ready For Your First DIY Oil Change: 4 Tips For Success</span></a></p>
+
+                </section>
+
+            </article>
+
+            <article id="post-38084" class="post-38084 post type-post status-publish format-standard has-post-thumbnail hentry category-maintenance tag-brake-maintenance tag-brake-rotor tag-brake-rotors tag-brake-system tag-brakes-2 tag-calipers tag-disc-brake tag-off-roading tag-rotor post-has-thumbnail">
+
+
+                <a href="http://knowhow.napaonline.com/how-to-clean-brake-rotors/" class="thumbnail">
+                    <img width="700" height="366" src="http://knowhow.napaonline.com/wp-content/uploads/2020/08/rotor15.jpg" class="attachment-carmack-archive size-carmack-archive wp-post-image jetpack-lazy-image jetpack-lazy-image--handled" alt="Close-up of a dirty brake rotor" data-lazy-loaded="1">
+                </a>
+
+
+                <section class="entry entry-archive">
+
+
+                    <div class="post-meta-data">
+
+                        <span class="posted-on meta">Posted <a href="http://knowhow.napaonline.com/how-to-clean-brake-rotors/" rel="bookmark"><time class="entry-date published updated" datetime="2020-08-18T17:33:20-04:00"><span class="post-human-time">2 weeks ago</span></time></a></span>	<span class="post-lead-category meta"><a href="http://knowhow.napaonline.com/category/maintenance/">Maintenance</a></span>
+
+                    </div>
+
+                    <h2 class="entry-title">
+                        <a href="http://knowhow.napaonline.com/how-to-clean-brake-rotors/" rel="bookmark">
+                            How to Clean Brake Rotors
+                        </a>
+                    </h2>
+
+                    <p>Learning how to clean brake rotors and staying on top of it is an easy way to help maintain your brake system’s safety.</p>
+
+                </section>
+
+            </article>
+
+            <article id="post-38737" class="post-38737 post type-post status-publish format-standard has-post-thumbnail hentry category-maintenance tag-1234yf tag-ac tag-air-conditioning tag-air-conditioning-compressor tag-climate-control tag-condenser tag-r12 tag-r134a tag-refrigerant tag-repair-or-buy-new-car post-has-thumbnail">
+
+
+                <a href="http://knowhow.napaonline.com/is-your-car-a-c-not-blowing-cold-air-heres-what-to-do/" class="thumbnail">
+                    <img width="700" height="366" src="http://knowhow.napaonline.com/wp-content/uploads/2020/08/car-2189877.jpg" class="attachment-carmack-archive size-carmack-archive wp-post-image jetpack-lazy-image jetpack-lazy-image--handled" alt="Is Your Car A/C Not Blowing Cold Air? Here's What to Do" data-lazy-loaded="1">
+                </a>
+
+
+                <section class="entry entry-archive">
+
+
+                    <div class="post-meta-data">
+
+                        <span class="posted-on meta">Posted <a href="http://knowhow.napaonline.com/is-your-car-a-c-not-blowing-cold-air-heres-what-to-do/" rel="bookmark"><time class="entry-date published updated" datetime="2020-08-12T12:22:43-04:00"><span class="post-human-time">3 weeks ago</span></time></a></span>	<span class="post-lead-category meta"><a href="http://knowhow.napaonline.com/category/maintenance/">Maintenance</a></span>
+
+                    </div>
+
+                    <h2 class="entry-title">
+                        <a href="http://knowhow.napaonline.com/is-your-car-a-c-not-blowing-cold-air-heres-what-to-do/" rel="bookmark">
+                            Is Your Car A/C Not Blowing Cold Air? Here’s What to Do
+                        </a>
+                    </h2>
+
+                    <p>Is there anything more frustrating than a car A/C not blowing cold air on a 90-degree summer day? Here’s what might be wrong and how to fix it.</p>
+
+                </section>
+
+            </article>
+
+            <article id="post-38731" class="post-38731 post type-post status-publish format-standard has-post-thumbnail hentry category-maintenance tag-buffing tag-car-maintenance tag-car-wash tag-cleaning tag-paint-2 tag-polishing post-has-thumbnail">
+
+
+                <a href="http://knowhow.napaonline.com/how-to-remove-swirl-marks-in-your-cars-paint/" class="thumbnail">
+                    <img width="700" height="366" src="http://knowhow.napaonline.com/wp-content/uploads/2020/06/washing-a-car-with-a-sponge-6003-1.jpg" class="attachment-carmack-archive size-carmack-archive wp-post-image jetpack-lazy-image jetpack-lazy-image--handled" alt="Washing a car with a yellow sponge" data-lazy-loaded="1">
+                </a>
+
+
+                <section class="entry entry-archive">
+
+
+                    <div class="post-meta-data">
+
+                        <span class="posted-on meta">Posted <a href="http://knowhow.napaonline.com/how-to-remove-swirl-marks-in-your-cars-paint/" rel="bookmark"><time class="entry-date published updated" datetime="2020-08-10T12:22:20-04:00"><span class="post-human-time">3 weeks ago</span></time></a></span>	<span class="post-lead-category meta"><a href="http://knowhow.napaonline.com/category/maintenance/">Maintenance</a></span>
+
+                    </div>
+
+                    <h2 class="entry-title">
+                        <a href="http://knowhow.napaonline.com/how-to-remove-swirl-marks-in-your-cars-paint/" rel="bookmark">
+                            How to Remove Swirl Marks in Your Car’s Paint
+                        </a>
+                    </h2>
+
+                    <p>Swirl marks are fine paint scratches caused by wiping your car with a dry towel. Learn how to remove swirl marks to leave your paint looking good as new.</p>
+
+                </section>
+
+            </article>
+
+            <article id="post-10250" class="post-10250 post type-post status-publish format-standard has-post-thumbnail hentry category-maintenance tag-cotton-air-filter tag-engine-air-filter tag-filters tag-motorcycle tag-motorcycle-air-filters tag-motorcycle-care tag-motorcycle-maintenance tag-paper-air-filter post-has-thumbnail">
+
+
+                <a href="http://knowhow.napaonline.com/motorcycle-air-filters-what-you-need-to-know-for-clean-breathing/" class="thumbnail">
+                    <img width="700" height="366" src="http://knowhow.napaonline.com/wp-content/uploads/2016/04/1024px-2006HondaCBR600RR-001.jpg" class="attachment-carmack-archive size-carmack-archive wp-post-image jetpack-lazy-image" alt="Honda Motor Cycle" data-lazy-src="http://knowhow.napaonline.com/wp-content/uploads/2016/04/1024px-2006HondaCBR600RR-001.jpg?is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+                </a>
+
+
+                <section class="entry entry-archive">
+
+
+                    <div class="post-meta-data">
+
+                        <span class="posted-on meta">Posted <a href="http://knowhow.napaonline.com/motorcycle-air-filters-what-you-need-to-know-for-clean-breathing/" rel="bookmark"><time class="entry-date published updated" datetime="2020-07-25T11:13:30-04:00"><span class="post-human-time">1 month ago</span></time></a></span>	<span class="post-lead-category meta"><a href="http://knowhow.napaonline.com/category/maintenance/">Maintenance</a></span>
+
+                    </div>
+
+                    <h2 class="entry-title">
+                        <a href="http://knowhow.napaonline.com/motorcycle-air-filters-what-you-need-to-know-for-clean-breathing/" rel="bookmark">
+                            Motorcycle Air Filters: What You Need to Know For Clean Breathing
+                        </a>
+                    </h2>
+
+                    <p>Motorcycle air filters are an essential part for your bike. When working properly, an air filter traps dirt and other particulate matter.</p>
+
+                </section>
+
+            </article>
+
+            <article id="post-11362" class="post-11362 post type-post status-publish format-standard has-post-thumbnail hentry category-maintenance tag-cabin-air-filter tag-car-care tag-car-safety tag-climate-control tag-climate-control-maintenance post-has-thumbnail">
+
+
+                <a href="http://knowhow.napaonline.com/mold-air-conditioner-serious/" class="thumbnail">
+                    <img width="700" height="366" src="http://knowhow.napaonline.com/wp-content/uploads/2016/08/car-933417_1920a.jpg" class="attachment-carmack-archive size-carmack-archive wp-post-image jetpack-lazy-image" alt="Keep Air Vents Clean" data-lazy-src="http://knowhow.napaonline.com/wp-content/uploads/2016/08/car-933417_1920a.jpg?is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+                </a>
+
+
+                <section class="entry entry-archive">
+
+
+                    <div class="post-meta-data">
+
+                        <span class="posted-on meta">Posted <a href="http://knowhow.napaonline.com/mold-air-conditioner-serious/" rel="bookmark"><time class="entry-date published updated" datetime="2020-07-20T15:19:58-04:00"><span class="post-human-time">1 month ago</span></time></a></span>	<span class="post-lead-category meta"><a href="http://knowhow.napaonline.com/category/maintenance/">Maintenance</a></span>
+
+                    </div>
+
+                    <h2 class="entry-title">
+                        <a href="http://knowhow.napaonline.com/mold-air-conditioner-serious/" rel="bookmark">
+                            Mold in the Air Conditioner: How Serious Is It?
+                        </a>
+                    </h2>
+
+                    <p>Mold in the air conditioner is just one of many smells you may detect inside your car.</p>
+
+                </section>
+
+            </article>
+
+            <article id="post-7926" class="post-7926 post type-post status-publish format-standard has-post-thumbnail hentry category-maintenance tag-car-paint-repair tag-car-touch-up-paint tag-paint-2 tag-paint-repair tag-scratch tag-scratch-repair tag-scuff tag-touch-up-paint post-has-thumbnail">
+
+
+                <a href="http://knowhow.napaonline.com/fix-scratches-diy-guide/" class="thumbnail">
+                    <img width="700" height="366" src="http://knowhow.napaonline.com/wp-content/uploads/2015/11/scratch-1-.jpg" class="attachment-carmack-archive size-carmack-archive wp-post-image jetpack-lazy-image" alt="How to Fix Scratches" data-lazy-src="http://knowhow.napaonline.com/wp-content/uploads/2015/11/scratch-1-.jpg?is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+                </a>
+
+
+                <section class="entry entry-archive">
+
+
+                    <div class="post-meta-data">
+
+                        <span class="posted-on meta">Posted <a href="http://knowhow.napaonline.com/fix-scratches-diy-guide/" rel="bookmark"><time class="entry-date published updated" datetime="2020-07-17T17:22:50-04:00"><span class="post-human-time">1 month ago</span></time></a></span>	<span class="post-lead-category meta"><a href="http://knowhow.napaonline.com/category/maintenance/">Maintenance</a></span>
+
+                    </div>
+
+                    <h2 class="entry-title">
+                        <a href="http://knowhow.napaonline.com/fix-scratches-diy-guide/" rel="bookmark">
+                            How to Fix Scratches: A DIY Guide
+                        </a>
+                    </h2>
+
+                    <p>How to Fix Scratches</p>
+
+                </section>
+
+            </article>
+
+            <article id="post-8671" class="post-8671 post type-post status-publish format-standard has-post-thumbnail hentry category-maintenance tag-clutch tag-clutch-replacement tag-clutch-wear tag-drivetrain tag-gearbox tag-manual-transmission tag-transmission post-has-thumbnail">
+
+
+                <a href="http://knowhow.napaonline.com/clutch-replacement-know-signs-ending-stranded/" class="thumbnail">
+                    <img width="700" height="366" src="http://knowhow.napaonline.com/wp-content/uploads/2016/01/3013714540_b55af45fd9_o.jpg" class="attachment-carmack-archive size-carmack-archive wp-post-image jetpack-lazy-image" alt="Clutch Replacement: Know the Signs Before Ending Up Stranded" data-lazy-src="http://knowhow.napaonline.com/wp-content/uploads/2016/01/3013714540_b55af45fd9_o.jpg?is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+                </a>
+
+
+                <section class="entry entry-archive">
+
+
+                    <div class="post-meta-data">
+
+                        <span class="posted-on meta">Posted <a href="http://knowhow.napaonline.com/clutch-replacement-know-signs-ending-stranded/" rel="bookmark"><time class="entry-date published updated" datetime="2020-07-16T15:35:08-04:00"><span class="post-human-time">2 months ago</span></time></a></span>	<span class="post-lead-category meta"><a href="http://knowhow.napaonline.com/category/maintenance/">Maintenance</a></span>
+
+                    </div>
+
+                    <h2 class="entry-title">
+                        <a href="http://knowhow.napaonline.com/clutch-replacement-know-signs-ending-stranded/" rel="bookmark">
+                            Clutch Replacement: Know the Signs Before Ending Up Stranded
+                        </a>
+                    </h2>
+
+                    <p>Clutch Replacement: Know the Signs</p>
+
+                </section>
+
+            </article>
+
+            <article id="post-6683" class="post-6683 post type-post status-publish format-standard has-post-thumbnail hentry category-maintenance tag-aquapel tag-hydrophobic tag-rain tag-rain-x tag-windshield tag-windshield-treatment tag-windshield-wipers tag-wiper-blades post-has-thumbnail">
+
+
+                <a href="http://knowhow.napaonline.com/treating-your-windshield-upgrade-your-windshield-for-summer-storm-visibility/" class="thumbnail">
+                    <img width="700" height="366" src="http://knowhow.napaonline.com/wp-content/uploads/2015/08/4597461278_a5c993ccc1_b.jpg" class="attachment-carmack-archive size-carmack-archive wp-post-image jetpack-lazy-image" alt="Treating your Windshield - Upgrade to Better Visibility!" data-lazy-src="http://knowhow.napaonline.com/wp-content/uploads/2015/08/4597461278_a5c993ccc1_b.jpg?is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+                </a>
+
+
+                <section class="entry entry-archive">
+
+
+                    <div class="post-meta-data">
+
+                        <span class="posted-on meta">Posted <a href="http://knowhow.napaonline.com/treating-your-windshield-upgrade-your-windshield-for-summer-storm-visibility/" rel="bookmark"><time class="entry-date published updated" datetime="2020-07-15T15:52:35-04:00"><span class="post-human-time">2 months ago</span></time></a></span>	<span class="post-lead-category meta"><a href="http://knowhow.napaonline.com/category/maintenance/">Maintenance</a></span>
+
+                    </div>
+
+                    <h2 class="entry-title">
+                        <a href="http://knowhow.napaonline.com/treating-your-windshield-upgrade-your-windshield-for-summer-storm-visibility/" rel="bookmark">
+                            Treating Your Windshield: Upgrade Your Windshield for Summer Storm Visibility
+                        </a>
+                    </h2>
+
+                    <p>As you know, you can only drive if you can see, which is why treating your windshield is a vital part of your car’s upkeep.</p>
+
+                </section>
+
+            </article>
+
+        </div>
+
+
+        <nav class="navigation pagination" role="navigation" aria-label="Posts">
+            <h2 class="screen-reader-text">Posts navigation</h2>
+            <div class="nav-links">
+                <span aria-current="page" class="page-numbers current">1</span>
+                <a class="page-numbers" href="http://knowhow.napaonline.com/category/maintenance/page/2/">2</a>
+                <a class="page-numbers" href="http://knowhow.napaonline.com/category/maintenance/page/3/">3</a>
+                <span class="page-numbers dots">…</span>
+                <a class="page-numbers" href="http://knowhow.napaonline.com/category/maintenance/page/32/">32</a>
+                <a class="next page-numbers" href="http://knowhow.napaonline.com/category/maintenance/page/2/">Next Page</a>
+            </div>
+        </nav>
+    </main>
+
+
+    <!-- Sidebar Main (1) -->
+
+    <aside class="sidebar sidebar-main" role="complementary">
+
+        <section id="search-2" class="widget widget_search">
+            <div class="widget-wrap">
+                <form method="get" class="search-form" action="http://knowhow.napaonline.com/" role="search">
+
+                    <label>
+                        <span class="screen-reader-text">Search</span>
+                        <input type="search" value="" name="s" class="search-field text" placeholder="Search...">
+                    </label>
+
+                    <button class="search-submit"><svg aria-hidden="true" role="img" class="icon" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M20.57 23.57A12.94 12.94 0 0 1 13 26C5.82 26 0 20.18 0 13S5.82 0 13 0s13 5.82 13 13c0 2.824-.9 5.438-2.43 7.57L32 29l-3 3-8.43-8.43zM13 23c5.523 0 10-4.477 10-10S18.523 3 13 3 3 7.477 3 13s4.477 10 10 10z" fill-rule="evenodd"></path></svg><span class="screen-reader-text">Search</span></button>
+
+                </form>
+            </div>
+        </section><section id="categories-4" class="widget widget_categories">
+            <div class="widget-wrap">
+                <h2 class="widget-title">Categories</h2>		<ul>
+                    <li class="cat-item cat-item-244">
+                        <a href="http://knowhow.napaonline.com/category/contests-and-promotions/">Contests and Promotions</a>
+                    </li>
+                    <li class="cat-item cat-item-2">
+                        <a href="http://knowhow.napaonline.com/category/featured/" title="Check out the latest featured automotive articles from the NAPA Know How Blog. With over 90 years of experience NAPA wants to share our Know How with everyone.">Featured</a>
+                    </li>
+                    <li class="cat-item cat-item-1916">
+                        <a href="http://knowhow.napaonline.com/category/featured-racing/" title="Looking for the latest featured racing news about Chase Elliott, Ron Capps, Alexander Rossi, Brad Sweet, Hailie Deegan and Derek Kraus? Then check out the NAPA Racing blog!">Featured Racing</a>
+                    </li>
+                    <li class="cat-item cat-item-5">
+                        <a href="http://knowhow.napaonline.com/category/know-how/" title="Sharing NAPA Know How for all is what we do here at the NAPA Know How Blog. The Know How category is the place to find the information you need to be educated about your vehicle. Whether you are a beginner DIYer, a seasoned mechanic, or a patron of your local NAPA AutoCare there is always something new to learn.
+
+We'll tell you how your car works, why maintenance matters, what tools you need, and how to stay safe. We've got tips for servicing brakes, how your oil filter works, checking your cooling system, choosing the right brake fluid, even dealing with water damage after a flood. Our guides will help equip you to make the right decisions for your situation, how to prepare for your next repair, and how to pick the right tools for the job. Since NAPA is more than just car parts, you can also learn about your lawn equipment, boat, RV, ATV, or snowmobile.">Know How</a>
+                    </li>
+                    <li class="cat-item cat-item-273">
+                        <a href="http://knowhow.napaonline.com/category/lifestyle/" title="NAPA Know How for all is more than just turning wrenches, it is about living the automotive lifestyle. Our lifestyle category is filled with articles about all things automotive. Thinking about hitting the road? Check out one of our road trip planning guides. Interesting in racing? Find out how you can hit the track safely. Enjoy camping while you travel? We've got tips to make your RV or car camping experience the best it can be. Love performance cars? We've got factory hot rods, customs, and muscle cars. We've also got the low-down on new automotive technology as well as driver and passenger safety.&nbsp;">LifeStyle</a>
+                    </li>
+                    <li class="cat-item cat-item-274 current-cat">
+                        <a aria-current="page" href="http://knowhow.napaonline.com/category/maintenance/" title="Know How for all means knowing the right maintenance schedule for all your vehicles. We've leveraged over 90 years of experience to help you maintain your car, truck, boat, motorcycle, lawn mower, ATV, snowmobile, and more. Regardless of whether you do all your own maintenance in your home garage or trust the experts at your local NAPA AutoCare, we've got the knowledge you need to keep everything running in top condition. Changing your oil on a regular basis is key to long engine life, but so is a fresh air filter. Don't forget to check your brakes on a regular basis. Maintaining a vehicle doesn't have to be difficult when NAPA Know How is on your side.">Maintenance</a>
+                    </li>
+                    <li class="cat-item cat-item-1274">
+                        <a href="http://knowhow.napaonline.com/category/napa-autocare/">NAPA AutoCare</a>
+                    </li>
+                    <li class="cat-item cat-item-3">
+                        <a href="http://knowhow.napaonline.com/category/news/" title="Looking for the latest automotive news and updates about NAPA AUTO PARTS? Then look no further than the NAPA Know How Blog!">News</a>
+                    </li>
+                    <li class="cat-item cat-item-2336">
+                        <a href="http://knowhow.napaonline.com/category/partner-spotlight/">Partner Spotlight</a>
+                    </li>
+                    <li class="cat-item cat-item-6">
+                        <a href="http://knowhow.napaonline.com/category/racing/" title="Looking for the latest news about Chase Elliott, Ron Capps, Alexander Rossi, Brad Sweet, and Gio Scelzi? Then check out the NAPA Racing blog!">Racing</a>
+                        <ul class="children">
+                            <li class="cat-item cat-item-2982">
+                                <a href="http://knowhow.napaonline.com/category/racing/arca/">ARCA</a>
+                            </li>
+                            <li class="cat-item cat-item-2089">
+                                <a href="http://knowhow.napaonline.com/category/racing/indycar/" title="Looking for the latest news about Alexander Rossi and the NAPA AUTO PARTS IndyCar racing team? Then check out the NAPA Racing blog!">IndyCar</a>
+                            </li>
+                            <li class="cat-item cat-item-24">
+                                <a href="http://knowhow.napaonline.com/category/racing/nascar/" title="Looking for the latest news about Chase Elliott and the&nbsp;NAPA AUTO PARTS racing team? Then check out the NAPA Racing blog!">NASCAR</a>
+                            </li>
+                            <li class="cat-item cat-item-16">
+                                <a href="http://knowhow.napaonline.com/category/racing/nhra-drag-racing/" title="Looking for the latest news about Ron Capps&nbsp;and the NAPA AUTO PARTS NHRA Drag Racing Funny Car team? Then check out the NAPA Racing blog!">NHRA Drag Racing</a>
+                            </li>
+                            <li class="cat-item cat-item-2233">
+                                <a href="http://knowhow.napaonline.com/category/racing/sprint-car-racing/" title="Looking for the latest news about Brad Sweet and the No. 49&nbsp;NAPA AUTO PARTS Sprint Car Racing team? Then check out the NAPA Racing blog!">Sprint Car Racing</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cat-item cat-item-275">
+                        <a href="http://knowhow.napaonline.com/category/upgrades-2/">Upgrades</a>
+                    </li>
+                </ul>
+            </div>
+        </section><section id="top-posts-4" class="widget widget_top-posts">
+            <div class="widget-wrap">
+                <h2 class="widget-title">Top Posts</h2><ul>
+                    <li>
+                        <a href="http://knowhow.napaonline.com/the-best-time-to-mow-your-lawn-without-annoying-your-neighbors/" class="bump-view" data-bump-view="tp">The Best Time to Mow Your Lawn without Annoying Your Neighbors</a>
+                    </li>
+                    <li>
+                        <a href="http://knowhow.napaonline.com/how-to-use-sea-foam-three-ways-to-a-cleaner-fuel-system/" class="bump-view" data-bump-view="tp">How To Use Sea Foam: Three Ways To A Cleaner Fuel System</a>
+                    </li>
+                    <li>
+                        <a href="http://knowhow.napaonline.com/dead-car-battery-simple-hack-lets-shift-neutral/" class="bump-view" data-bump-view="tp">Dead Car Battery? This Simple Hack Lets You Shift to Neutral</a>
+                    </li>
+                    <li>
+                        <a href="http://knowhow.napaonline.com/car-battery-wont-hold-charge-try-4-steps/" class="bump-view" data-bump-view="tp">If Your Car Battery Won't Hold a Charge, Try These 4 Steps</a>
+                    </li>
+                    <li>
+                        <a href="http://knowhow.napaonline.com/4-common-brake-light-problems-solve/" class="bump-view" data-bump-view="tp">4 Common Brake Light Problems and How to Solve Them</a>
+                    </li>
+                    <li>
+                        <a href="http://knowhow.napaonline.com/how-to-dry-out-your-wet-car-in-3-easy-steps/" class="bump-view" data-bump-view="tp">How to Dry Out Your Wet Car in 3 Easy Steps</a>
+                    </li>
+                    <li>
+                        <a href="http://knowhow.napaonline.com/6-signs-you-may-have-a-bad-water-pump-on-your-hands/" class="bump-view" data-bump-view="tp">6 Signs You May Have a Bad Water Pump On Your Hands</a>
+                    </li>
+                    <li>
+                        <a href="http://knowhow.napaonline.com/clean-battery-terminals-car-6-step-process/" class="bump-view" data-bump-view="tp">How to Clean Battery Terminals in Your Car: The 6 Step Process</a>
+                    </li>
+                    <li>
+                        <a href="http://knowhow.napaonline.com/car-ac-lines-freezing-up-heres-what-you-can-do-about-it/" class="bump-view" data-bump-view="tp">Car AC Lines Freezing Up? Here's What You Can Do About It</a>
+                    </li>
+                    <li>
+                        <a href="http://knowhow.napaonline.com/drove-with-the-parking-brake-on-accidentally-now-what/" class="bump-view" data-bump-view="tp">Drove With the Parking Brake On Accidentally: Now What?</a>
+                    </li>
+                </ul>
+            </div>
+        </section>		<section id="recent-posts-8" class="widget widget_recent_entries">
+            <div class="widget-wrap">
+                <h2 class="widget-title">NAPA Racing News</h2>		<ul>
+                    <li>
+                        <a href="http://knowhow.napaonline.com/rossi-leads-17-laps-at-indy-500-retires-early-after-contact/">Rossi Leads 17 Laps at Indy 500, Retires Early after Contact</a>
+                    </li>
+                    <li>
+                        <a href="http://knowhow.napaonline.com/elliotts-day-ends-early-at-dover/">Elliott’s Day Ends Early at Dover</a>
+                    </li>
+                    <li>
+                        <a href="http://knowhow.napaonline.com/sweet-kkr-team-rebound-with-two-strong-races-in-north-dakota/">Sweet, KKR Team Rebound with Two Strong Races in North Dakota</a>
+                    </li>
+                    <li>
+                        <a href="http://knowhow.napaonline.com/scelzi-earns-third-podium-of-2020-at-colorado/">Scelzi Earns Third Podium of 2020 at Colorado</a>
+                    </li>
+                    <li>
+                        <a href="http://knowhow.napaonline.com/elliott-collects-top-five-finish-saturday-at-dover/">Elliott Collects Top-Five Finish Saturday at Dover</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </aside>
+
+
+</div>

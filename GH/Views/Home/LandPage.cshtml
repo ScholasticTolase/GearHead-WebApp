@@ -1,0 +1,512 @@
+﻿@model GH.Models.UserAccount
+
+
+
+@{
+    ViewBag.Title = "HomePage";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gearhead::@ViewBag.Title</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Conveyance Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+
+    </script>
+    <!-- //Meta tag Keywords -->
+    <link rel="icon" href="~/Content/images/engineering.png" />
+
+    <!-- Custom-Files -->
+
+    <link href="~/Content/landpage/css/bootstrap.css" rel="stylesheet" />
+    <!-- Bootstrap-Core-CSS -->
+
+
+
+    <link href="~/Content/landpage/css/footer.css" rel="stylesheet" />
+    <link href="~/Content/landpage/css/style.css" rel="stylesheet" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="~/Content/landpage/css/font-awesome.css" rel="stylesheet" />
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Shojumaru:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+    <!-- //Fonts -->
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+ @*   @RenderSection("scripts", required: false)*@
+    <script src="~/Content/blog/js/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- mian-content -->
+    <section class="main-content" id="home">
+        <!-- /header -->
+        <header class="sticky-top">
+            <div class="container-fluid px-lg-5 px-3">
+                <!-- nav -->
+                <nav class="py-2 d-lg-flex">
+                    <div id="logo">
+                        <h1>
+                            <a class="navbar-brand logo" style="font-family: 'Shojumaru', cursive, Arial, serif;" href="/Home/LandPage">
+                                GearHead
+                            </a>
+                        </h1>
+                    </div>
+
+                    <label for="drop" class="toggle">Menu</label>
+                    <input type="checkbox" id="drop" />
+                    <ul class="menu ml-auto">
+                        <li>@Html.ActionLink("Home", "LandPage", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                        <li> <a href="#MyModal" data-toggle="modal">Login</a></li>
+                    </ul>
+
+                </nav>
+                <!-- //nav -->
+            </div>
+        </header>
+        <!-- //header -->
+
+        <div class="csslider infinity" id="slider1">
+            <input type="radio" name="slides" checked="checked" id="slides_1" />
+            <input type="radio" name="slides" id="slides_2" />
+            <input type="radio" name="slides" id="slides_3" />
+            <input type="radio" name="slides" id="slides_4" />
+            <input type="radio" name="slides" id="slides_5" />
+            <ul>
+                <li>
+                    <div id="bg">
+                        <div class="banner-info-wthree">
+                            <div class="container">
+                                <h3>Owning a car is liberating!</h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="bg1">
+                        <div class="banner-info-wthree">
+                            <div class="container">
+                                <h3> Car Break-downs are drivers' worst nightmare</h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="bg2">
+                        <div class="banner-info-wthree">
+                            <div class="container">
+                                <h3>the cause of your breakdown could be a lot simpler than you think.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="bg3">
+                        <div class="banner-info-wthree">
+                            <div class="container">
+                                <h3>Can't reach out for repair service?</h3>
+                                <a href='#MyModal' data-toggle="modal" class=" btn btn-primary"> Login Here</a>
+                                <!-- Button to Open the Modal -->
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="bg4">
+                        <div class="banner-info-wthree">
+                            <div class="container">
+                                <h3 style="color:white!important;"> Easy Guides are here</h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="arrows">
+                <label for="slides_1"></label>
+                <label for="slides_2"></label>
+                <label for="slides_3"></label>
+                <label for="slides_4"></label>
+                <label for="slides_5"></label>
+            </div>
+            <div class="navigation">
+                <div>
+                    <label for="slides_1"></label>
+                    <label for="slides_2"></label>
+                    <label for="slides_3"></label>
+                    <label for="slides_4"></label>
+                    <label for="slides_5"></label>
+                </div>
+            </div>
+        </div>
+        <!-- //banner -->
+    </section>
+    <!--// mian-content -->
+    <br />
+    <br />
+
+    <!-- Gallery -->
+    <section class="gallery py-5" id="gallery">
+        <div class="container py-lg-5 py-3">
+            <div class="header py-lg-5 py-3 text-center">
+                <h3 class="tittle mb-lg-3 mb-3"> Did You Know?</h3>
+            </div>
+            <div class="row news-grids text-center">
+                <div class="col-md-4 gal-img">
+                    <a href="#gal1"><img src="~/Content/landpage/fact-images/fun-facts-Benz.jpg" alt="news image" class="img-fluid"></a>
+
+                    <a href="#gal2"><img src="~/Content/landpage/fact-images/fun-facts-car-accident.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="#gal3"><img src="~/Content/landpage/fact-images/fun-facts-crash-test.jpg" alt="news image" class="img-fluid"></a>
+
+                    <a href="#gal4"><img src="~/Content/landpage/fact-images/fun-facts-Old-cars.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="#gal5"><img src="~/Content/landpage/fact-images/lambo-no-engine.jpg" alt="news image" class="img-fluid"></a>
+                    
+                    <a href="#gal6"><img src="~/Content/landpage/fact-images/fun-facts-driverless-car.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+        <!-- popup-->
+        <div id="gal1" class="pop-overlay animate">
+            <div class="popup">
+                <img src="~/Content/landpage/fact-images/fun-facts-Benz.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4"> The car’s humble origins date back to 1885. Carl Benz created a vehicle with a four-stroke engine and impressively large wheels. Thankfully, they’ve sped up and have gotten a bit sleeker in the design department since then!</p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div>
+        <!-- //popup -->
+        <!-- popup-->
+        <div id="gal2" class="pop-overlay animate">
+            <div class="popup">
+                <img src="~/Content/landpage/fact-images/fun-facts-car-accident.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4">The first car accident occurred in 1891, in Ohio.</p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div>
+        <!-- //popup -->
+        <!-- popup-->
+        <div id="gal3" class="pop-overlay animate">
+            <div class="popup">
+                <img src="~/Content/landpage/fact-images/fun-facts-crash-test.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4"> In 1938, crash tests were first carried out by Audi. These tests gave the company an idea about how the car would behave in case an accident occurred. Without realizing it, the company had set a precedent for all other car manufacturers.</p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div>
+        <!-- //popup3 -->
+        <!-- popup-->
+        <div id="gal4" class="pop-overlay animate">
+            <div class="popup">
+                <img src="~/Content/landpage/fact-images/fun-facts-Old-cars.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4"><p><strong>Hitler designed the prototype of Beetle design for Volkswagen</strong><p />Sitting at a restaurant table in Munich in the summer of 1932, Hitler designed the prototype for what would become the immensely successful Beetle design for Volkswagen (literally,   the “car of the people”). In an era where only the most economic elite possessed cars, Hitler believed that all people should be able to own a car and additionally thought that a smart     design could allow for reliability, enjoyment, and vacation travel. The name given to the car in 1938 was Kraft durch Freud.</p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div>
+        <!-- //popup -->
+        <!-- popup-->
+        <div id="gal5" class="pop-overlay animate">
+            <div class="popup">
+                <img src="~/Content/landpage/fact-images/lambo-no-engine.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4">
+                    <strong> First Lamborghini didn’t even have an engine when they unveiled it.</strong>
+                    <br /> <br />
+                    The 350 GTV may have been the world’s first Lambo, and ultimately, it led to the creation of the supercar genre, but when it was first unveiled at the Turin Auto Show it wasn’t even finished, so they put a bunch of bricks where the engine should have been and kept the hood shut the entire time.
+                </p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div>
+        <!-- //popup -->
+        <!-- popup-->
+        <div id="gal6" class="pop-overlay animate">
+            <div class="popup">
+                <img src="~/Content/landpage/fact-images/fun-facts-driverless-car.jpg" alt="Popup Image" class="img-fluid" />
+                <p class="mt-4"><strong>Google built its first driverless car prototype dubbed the 'Koala car' in 2014.</strong>
+                    <br /> <br />
+                    The world is edging closer and closer to driverless car technology. Google, for example, already has its own fleet of automated vehicles driving in and around Palo Alto, California, where the brand is based.
+                </p>
+                <a class="close" href="#gallery">&times;</a>
+            </div>
+        </div>
+        <!-- //popup -->
+    </section>
+    <!--// gallery -->
+
+
+    <!------------------------ The Modal for Login------------------------------------------------->
+
+
+
+    <div class="modal fade" id="MyModal">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h6 class="modal-title alert alert-info" style="border-radius: 40px;">Login with Username and Password.</h6>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <!-- &times; -->
+                        <span class="fa fa-times-circle"></span>
+                    </button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="/Home/CheckUser" class="LoginForm" method="post">
+                        <div class="form-group">
+                            <div id="feedback" class="alert alert-success"><ul> Succesfully Registered!</ul></div>
+                            <div id="msg" class=" alert alert-danger"><ul> Invalid Username Or Password</ul></div>
+                            <label class="control-label col-md-4" for="Username">Username</label>
+                            <div class="col-md-8">
+                                <input class="form-control text-box single-line" id="Username" name="Username" type="text" value="">
+                                <span class="field-validation-valid text-danger" data-valmsg-for="Username" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4" for="Password">Password</label>
+                            <div class="col-md-8">
+                                <input class="form-control text-box single-line" id="Password" name="Password" type="password" value="">
+                                <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <div class="form-group ml-md-3 mb-md-1">
+                            <label><input type="checkbox"> Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary ml-md-3 mt-0" id="btnLogin">Sign in</button>
+                        <p class="ml-md-4"> Don't have an account yet? <a href="#MyReg" data-toggle="modal">Sign Up here</a></p>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-------------------------------------- The Modal for Registration ------------------------------->
+    <!-- The Modal -->
+    <div class="modal fade" id="MyReg">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title alert alert-info" style="border-radius: 40px;"> Creating an Account? <span class="badge badge-pill badge-secondary ml-md-2">Welcome!</span></h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <!-- &times; -->
+                        <span class="fa fa-times-circle"></span>
+                    </button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="/Home/Registration" method="post" novalidate="novalidate">
+                        <input name="__RequestVerificationToken" type="hidden" value="YsqWGH81J_9KL2arCI5CwmwWB_YkPZ8__1Blm7ElFv4cpQM2ylfinFcurNPFpqSHgtND8zH0U43a14jnFzOi6-nOiuaOYEgXP9_cLM2rxP81">
+                        <div class="form-horizontal">
+
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="FirstName">FirstName</label>
+                                <div class="col-md-9">
+                                    <input class="form-control text-box single-line" data-val="true" data-val-required="First Name is required!" id="FirstName" name="FirstName" type="text" value="">
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="LastName">LastName</label>
+                                <div class="col-md-9">
+                                    <input class="form-control text-box single-line" data-val="true" data-val-required="Last Name is required!" id="LastName" name="LastName" type="text" value="">
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-2 text-righ" for="Email">Email</label>
+                                <div class="col-md-9">
+                                    <input class="form-control text-box single-line" data-val="true" data-val-email="Invalid Email!" data-val-required="Email is required!" id="Email" name="Email" type="email" value="">
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="PhoneNumber">PhoneNumber</label>
+                                <div class="col-md-9">
+                                    <input class="form-control text-box single-line" data-val="true" data-val-required="PhoneNumber is required!" id="PhoneNumber" name="PhoneNumber" type="tel" value="">
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="PhoneNumber" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="Username">Username</label>
+                                <div class="col-md-9">
+                                    <input class="form-control text-box single-line valid" data-val="true" data-val-required="Username is required!" id="Username" name="Username" type="text" value="" aria-describedby="Username-error" aria-invalid="false">
+                                    <span class="text-danger field-validation-valid" data-valmsg-for="Username" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="Password">Password</label>
+                                <div class="col-md-9">
+                                    <input class="form-control text-box single-line password valid" data-val="true" data-val-required="Password is required!" id="Password" name="Password" type="password" aria-describedby="Password-error" aria-invalid="false">
+                                    <span class="text-danger field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-2" for="ConfirmPassword">ConfirmPassword</label>
+                                <div class="col-md-9">
+                                    <input class="form-control text-box single-line password" data-val="true" data-val-equalto="Please Confirm your password!" data-val-equalto-other="*.Password" id="ConfirmPassword" name="ConfirmPassword" type="password">
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="ConfirmPassword" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-9">
+                                    <button type="submit" id="btnSubmit" class="btn btn-success btnSubmit">Create Account</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div> <!-- /body -->
+                <!-- Modal footer -->
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("#msg").hide();
+            $("#feedback").hide();
+            IsProgress(false);
+            $(".LoginForm").on("submit", function (e) {
+                e.preventDefault();
+                //Ajax
+                $.ajax({
+                    url: "/Home/CheckUser",
+                    type: "POST",
+                    data: $(this).serialize(),
+                    success: function (result) {
+                        console.log(result)
+
+                        if (result == "Fail") {
+                            $(".LoginForm")[0].reset();
+                            $("#msg").show();
+                        }
+                        else {
+                            window.location.href = "/Home/UserPage";
+                            $("#msg").hide();
+                        }
+                    }
+                })
+            })
+        
+ 
+
+
+            @*------------------------ FOR THE REGISTRATION OF USER-----------------------------------*@
+
+
+
+
+            $("#MyReg").on("#btnSubmit", function (f) {
+                f.preventDefault();
+
+                //Getting form data
+                var firstname = $("#FirstName").val();
+                var lastname = $("#LastName").val();
+                var email = $("#Email").val();
+                var phonenumber = $("#PhoneNumber").val();
+                var username = $("#Username").val();
+                var password = $("#Password").val();
+                var confirmpassword = $("#ConfirmPassword").val();
+
+                var obj = {
+                    FirstName: firstname,
+                    LastName: lastname,
+                    Email: email,
+                    PhoneNumber: phonenumber,
+                    Username: username,
+                    Password: password,
+                    ConfirmPassword: confirmpassword,
+                };
+                //Ajax
+                $.ajax({
+                    url: "/Home/CreateUser",
+                    type: "POST",
+                    data: obj,
+                    success: function (response) {
+                        if (response == "Fail") {
+                            $("#MyReg")[0].reset();
+                            $("#feedback").hide();
+                        }
+                        else {
+
+                            window.location.href = "/Home/LandPage#MyModal";
+                            $("#feedback").show();
+                        }
+                    }
+                });
+            });//submit action ends
+               // function progress
+
+            function IsProgress(val) {
+                if (val == true) {
+                    $("#btnLogin").html("<i class='fa fa-spinner fa-spin'></i> Please wait.");
+                    $("#btnSubmit").html("<i class='fa fa-spinner fa-spin'></i> Please wait.");
+                }
+                else {
+                    $("#btnSubmit").html("Create Account");
+                    $("#btnLogin").html("Sign in");
+                }
+            }   
+        });
+
+
+    </script>
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <p>Copyrights © 2020 GearHead All rights reserved </p>
+        </div>
+    </div>
+</body>
+
+</html>

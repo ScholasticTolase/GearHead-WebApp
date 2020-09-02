@@ -1,0 +1,118 @@
+﻿@model GH.Models.UserAccount
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+
+<link href="~/Content/Admin/css/charisma-app.css" rel="stylesheet">
+
+<link id="bs-css" href="~/Content/Admin/css/bootstrap-cerulean.min.css" rel="stylesheet">
+
+<br />
+
+@*<h4 class="alert alert-danger"><strong> Login here <i class="fa fa-long-arrow-down mr-1"></i> </strong> to explore more ...</h4>
+*@
+<br />
+
+@*
+     @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Login" class="btn btn-primary" />
+               <span> Don't have an account yet? @Html.ActionLink("Sign Up here", "Registration", "SignUp")</span>
+            </div>
+
+        </div>
+
+    B
+    </div>
+    }
+
+*@
+<div class="row">
+    <div class="well col-md-5 center login-box">
+        <div class="alert alert-info">
+            Please login with your Username and Password.
+        </div>
+
+        <form action="/Home/UserLogin" method="post">
+            <input name="__RequestVerificationToken" type="hidden" value="6SG1r7DBmq1GfWgOzG4tZyDBVDmjSdXiTl1XexAZQvcbHC318KPjfTzJ8UTkzorua-r291hDJ4G7WOKC4c5KX2WTCT0BkEjkf2nu1rSVQ5U1">
+            <div class="form-horizontal">
+
+                <hr>
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <fieldset>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Username">Username</label>
+                    <div class="col-md-6">
+                        <input class="form-control text-box single-line" id="Username" name="Username" type="text" value="">
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Username" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Password">Password</label>
+                    <div class="col-md-6">
+                        <input class="form-control text-box single-line" id="Password" name="Password" type="password" value="">
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-offset-2 col-md-3" ">
+                    <input type="submit" value="Login" class="btn btn-primary">
+                    <!-- An element to toggle between password visibility -->
+                </div>
+                <p style="margin-bottom: 5px; margin-top:45px;"><input type="checkbox" onclick="myFunction()">Show Password</p>
+                <br />
+                <p class="col-md-offset-2"> Don't have an account yet? <a href="/Home/Registration">Sign Up here</a></p>
+            </fieldset>
+
+        </div>
+        </form>
+    </div><!--/span-->
+</div><!--/row-->
+<script>
+
+    function myFunction()
+    {
+        var x = document.getElementById("Password");
+        if (x.type === "password")
+        {
+            x.type = "text";
+        }
+        else
+        {
+            x.type = "password";
+        }
+    }
+</script>
+<br />  
+<br />  
+<br />
+<br /> 
+<br /> 
+<br />  
